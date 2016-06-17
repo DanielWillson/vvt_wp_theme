@@ -1,12 +1,50 @@
 /*
-Theme Name: Starkers HTML5
-Theme URI: http://nathanstaines.com
-Description: An HTML5 version of <a href="http://elliotjaystocks.com/starkers/">Starkers</a> by <a href="http://elliotjaystocks.com/">Elliot Jay Stocks</a> which is based on Twenty Ten.
-Version: 3.2
-Author: Nathan Staines
-Author URI: http://nathanstaines.com
-Tags: starkers, html5, naked, clean, basic
+Theme Name: Virginia Velocity
+Theme URI: http://virginiavelocity.org
+Description: A custom theme for the Virginia Velocity Tour
+Version: 1.0
+Author: Daniel Willson, Matthew Korbon
+Author URI: http://danielwillson.com
 */
 
 @import "css/reset.css";
 @import "css/layout.css";
+@import "css/matt.css";
+@import "css/fonts.css";
+
+/* Setting the standards */
+
+body,
+input,
+textarea { font-size: 18px; }
+
+h1 { font-size: 2.667em; } /* 48px */
+h2 { font-size: 2em; } /* 36px */
+h3 { font-size: 1.444em; } /* 28px */
+h4 { font-size: 1.222em; } /* 22px */
+
+a {
+  color: #028fc5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #028fc5;
+}
+
+/* End of standard setting */
+
+
+@media (max-width: 960px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 400px) {
+
+}
+
