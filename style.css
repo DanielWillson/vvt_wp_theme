@@ -12,9 +12,6 @@ Author URI: http://danielwillson.com
 @import "css/matt.css";
 @import "css/fonts.css";
 
-/* This is a change I'm making on a test branch. -Matt*/
-
-/* hello this is a test from Daniel */
 /* Setting the standards */
 
 body,
@@ -42,15 +39,46 @@ a:hover {
 /* End of standard setting */
 
 .fw-container {
-/*	width: 100%;
-*/	max-width: 1320px;
+	max-width: 1320px;
 	padding: 0 18px;
 	margin: 0 auto;
 	border: 1px solid black;
 }
 
+/* BEGIN HEADER STYLES */
+
+.header {
+	text-align: left;
+}
+
+.logo-container {
+	width: 200px;
+	height: 75px;
+	background-color: gray;
+	border: 1px solid #222;
+	margin: 18px 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.nav-container {
+	width: ;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.nav-container .menu-item {
+	display: inline;
+	margin-left: 18px;
+	text-transform: uppercase;
+}
+
+.nav-container .menu-item:nth-child(1) {
+	margin-left: 0;
+}
 
 
+/* END HEADER STYLES */
 
 
 @media (max-width: 960px) {

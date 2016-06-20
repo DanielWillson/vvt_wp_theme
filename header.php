@@ -33,7 +33,8 @@
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
      
     <script src="<?php bloginfo('template_directory'); ?>/js/modernizr-1.6.min.js"></script>
-     
+
+
     <?php
         /* We add some JavaScript to pages with the comment form
          * to support sites with threaded comments (when in use).
@@ -52,12 +53,23 @@
 <body <?php body_class(); ?>>
     <header>
         <div class="fw-container">
-        <hgroup>
-            <h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+            <div class="header">
+                <div class="logo-container">
+                    <!-- <img src="" /> -->
+                </div>
+                <div class="nav-container">
+                    <?php wp_nav_menu( array( 'container' => 'nav', 'fallback_cb' => 'starkers_menu', 'theme_location' => 'primary' ) ); ?>
+                </div>
+            </div>
+        <!-- <hgroup>
+            <h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                    <?php bloginfo( 'name' ); ?>
+                </a></h1>
             <h2><?php bloginfo( 'description' ); ?></h2>
         </hgroup>
  
         <?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to the 'starkers_menu' function which can be found in functions.php.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
-        <?php wp_nav_menu( array( 'container' => 'nav', 'fallback_cb' => 'starkers_menu', 'theme_location' => 'primary' ) ); ?>
-        </div>
+         -->
+
+
     </header>
