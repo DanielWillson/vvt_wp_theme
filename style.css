@@ -216,6 +216,41 @@ p {
 
 /* END 3-COLUMN STYLES */
 
+/* BEGIN QUOTE-RIGHT STYLES */
+
+.quote-right {
+	background-color: gray;
+	position: relative;
+}
+
+.quote-right-text {
+	width: 40%;
+	float: right;
+	padding: 100px 0;
+	padding-right: 5%;
+}
+
+
+/* END QUOTE-RIGHT STYLES */
+
+/* BEGIN QUOTE-LEFT STYLES */
+
+.quote-left {
+	background-color: gray;
+	position: relative;
+}
+
+.quote-left-text {
+	width: 40%;
+	float: left;
+	padding: 100px 0;
+	padding-left: 5%;
+	text-align: right;
+}
+
+
+/* END QUOTE-LEFT STYLES */
+
 @media (max-width: 1180px) {
 
 	/* BEGIN HEADER STYLES */
@@ -244,7 +279,23 @@ p {
 
 	/* END HERO STYLES */
 
+	/* BEGIN QUOTE-RIGHT STYLES */
 
+	.quote-right-text {
+		padding: 75px 0;
+		width: 60%;
+	}
+
+	/* END QUOTE-RIGHT STYLES */
+
+	/* BEGIN QUOTE-LEFT STYLES */
+
+	.quote-left-text {
+		padding: 75px 0;
+		width: 60%;
+	}
+
+	/* END QUOTE-RLEFT STYLES */
 
 }
 
@@ -292,6 +343,24 @@ p {
 	}
 	/* END 3-COLUMN STYLES */
 
+	/* BEGIN QUOTE-RIGHT STYLES */
+
+	.quote-right-text {
+		padding: 50px 0;
+		width: 70%;
+	}
+
+	/* END QUOTE-RIGHT STYLES */
+
+	/* BEGIN QUOTE-LEFT STYLES */
+
+	.quote-left-text {
+		padding: 50px 0;
+		width: 70%;
+	}
+
+	/* END QUOTE-LEFT STYLES */
+
 
 }
 
@@ -311,6 +380,24 @@ p {
 	}
 
 	/* END IMAGE-TEXT STYLES */
+
+	/* BEGIN QUOTE-RIGHT STYLES */
+
+	.quote-right-text {
+		padding: 18px 0;
+		width: 100%;
+	}
+
+	/* END QUOTE-RIGHT STYLES */
+
+	/* BEGIN QUOTE-LEFT STYLES */
+
+	.quote-left-text {
+		padding: 18px 0;
+		width: 100%;
+	}
+
+	/* END QUOTE-LEFT STYLES */
 
 }
 
