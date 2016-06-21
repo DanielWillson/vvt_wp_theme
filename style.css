@@ -40,6 +40,12 @@ p {
 	margin-bottom: 1em;
 }
 
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* End of standard setting */
 
 .fw-container {
@@ -155,6 +161,25 @@ p {
 
 /* END IMAGE-TEXT STYLES */
 
+/* BEGIN HERO STYLES */
+
+.hero {
+	background-color: gray;
+	position: relative;
+}
+
+.hero-text {
+	width: 40%;
+	float: right;
+	padding: 100px 0;
+	padding-right: 5%;
+}
+
+.hero-text h3 {
+	font-weight: bold;
+}
+
+/* END HERO STYLES */
 
 @media (max-width: 1180px) {
 
@@ -175,6 +200,15 @@ p {
 
 	/* END HEADER STYLES */
 
+	/* BEGIN HERO STYLES */
+
+	.hero-text {
+		padding: 75px 0;
+		width: 60%;
+	}
+
+	/* END HERO STYLES */
+
 
 }
 
@@ -192,10 +226,27 @@ p {
 
 	/* BEGIN IMAGE-TEXT STYLES */
 
+	/* BEGIN HERO STYLES */
+
+	.hero-text {
+		padding: 50px 0;
+		width: 70%;
+	}
+
+	/* END HERO STYLES */
+
+
 }
 
 @media (max-width: 480px) {
+	/* BEGIN HERO STYLES */
 
+	.hero-text {
+		padding: 18px 0;
+		width: 100%;
+	}
+
+	/* END HERO STYLES */
 }
 
 @media (max-width: 400px) {
