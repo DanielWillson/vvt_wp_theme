@@ -9,4 +9,6 @@
  
 get_header(); ?>
 
+	<?php get_template_part( 'parts/image-text', 'index' ); ?>
+
 <?php get_footer(); ?>

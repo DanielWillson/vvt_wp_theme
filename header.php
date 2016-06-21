@@ -28,11 +28,15 @@
             echo ' | ' . sprintf( __( 'Page %s', 'starkers' ), max( $paged, $page ) );
      
         ?></title>
+
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
      
     <script src="<?php bloginfo('template_directory'); ?>/js/modernizr-1.6.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" />
+
+
 
 
     <?php
@@ -51,25 +55,34 @@
     ?>
 </head>
 <body <?php body_class(); ?>>
+    <script>
+    $(document).ready(function(){
+        /* Used to toggle the appearance of the drop-down mobile nav menu */
+        $("#show-button").click(function(){
+            $("#menu-dropdown").fadeToggle("fast");
+            
+        });
+    });
+    </script>
     <header>
         <div class="fw-container">
             <div class="header">
                 <div class="logo-container">
                     <!-- <img src="" /> -->
                 </div>
-                <div class="nav-container">
+                <!-- Nav for Desktop -->
+                <div class="nav-container" id="desktop">
                     <?php wp_nav_menu( array( 'container' => 'nav', 'fallback_cb' => 'starkers_menu', 'theme_location' => 'primary' ) ); ?>
                 </div>
+                <!-- Nav for Mobile -->
+                <div id="show-button">
+                    <div class="nav-container show-button">
+                        <img src="<?php echo get_template_directory_uri (); ?>/images/navicon.gif" alt="Menu" class="navicon">
+                        <div id="menu-dropdown">
+                            <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+                        </div>
+                    </div>
+                </div>
             </div>
-        <!-- <hgroup>
-            <h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                    <?php bloginfo( 'name' ); ?>
-                </a></h1>
-            <h2><?php bloginfo( 'description' ); ?></h2>
-        </hgroup>
- 
-        <?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to the 'starkers_menu' function which can be found in functions.php.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
-         -->
-
-
+        </div>
     </header>

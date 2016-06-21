@@ -36,6 +36,10 @@ a:hover {
 	color: #028fc5;
 }
 
+p {
+	margin-bottom: 1em;
+}
+
 /* End of standard setting */
 
 .fw-container {
@@ -49,6 +53,7 @@ a:hover {
 
 .header {
 	text-align: left;
+	position: relative;
 }
 
 .logo-container {
@@ -62,26 +67,130 @@ a:hover {
 }
 
 .nav-container {
-	width: ;
 	display: inline-block;
 	vertical-align: middle;
+	position: absolute;
+    top: 45%;
+    right: 0;
+}
+
+#show-button, #menu-dropdown {
+	display: none;
+}
+
+#show-button {
+	float: right;
+	padding: 40px 36px;
+	text-transform: uppercase;
 }
 
 .nav-container .menu-item {
 	display: inline;
 	margin-left: 18px;
 	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .nav-container .menu-item:nth-child(1) {
 	margin-left: 0;
 }
 
+.navicon {
+	width: 100%;
+	max-width: 35px;
+	height: auto;
+}
+
+#menu-dropdown {
+	position: fixed;
+	right: 18px;
+	background: #028fc5;
+	margin-top: 10px;
+	font-size: 1.222em;
+	box-shadow: 0 0 10px rgba(30,30,30,.4);
+}
+
+#menu-dropdown li {
+	padding: 10px;
+	border-bottom: 1px solid rgba(228, 228, 228, 0.34);
+	display: block;
+}
+
+#menu-dropdown li:last-child {
+	border-bottom: none;
+}
+
+#menu-dropdown a {
+	color: #fff;
+}
 
 /* END HEADER STYLES */
+/* BEGIN IMAGE-TEXT STYLES */
+
+.image-text {
+	font-size: 0;
+}
+
+.image-left {
+	width: 49%;
+	background: gray;
+	display: inline-block;
+	margin: 18px 0;
+	margin-right: 2%;
+	vertical-align: middle;
+}
+
+.image-left img {
+	width: 100%;
+	height: auto;
+}
+
+.text-right {
+	width: 49%;
+	display: inline-block;
+	font-size: 18px;
+	vertical-align: middle;
+	margin: 18px 0;
+}
+
+/* END IMAGE-TEXT STYLES */
+
+
+@media (max-width: 1180px) {
+
+	/* BEGIN HEADER STYLES */
+
+	#show-button {
+		display: inline-block;
+	}
+
+	#desktop {
+		display: none;
+	}
+
+	.nav-container .menu-item {
+		margin-left: 0;
+	}
+
+
+	/* END HEADER STYLES */
+
+
+}
 
 
 @media (max-width: 960px) {
+
+	/* BEGIN IMAGE-TEXT STYLES */
+
+	.image-left, .text-right {
+		display: block;
+		width: 100%;
+		margin-right: 0;
+	}
+
+
+	/* BEGIN IMAGE-TEXT STYLES */
 
 }
 
