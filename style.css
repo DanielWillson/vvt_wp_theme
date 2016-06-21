@@ -181,6 +181,42 @@ p {
 
 /* END HERO STYLES */
 
+/* BEGIN 3-COLUMN STYLES */
+
+.3-column {
+
+font-size: 0;
+
+}
+.column h3{
+
+	font-weight:bold;
+}
+
+.column img{
+
+	width: 80%;
+	height: auto;
+
+}
+
+.column {
+	font-size: 18px;
+	width: 30%;
+	padding: 18px 0;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	margin-right: 2.5%;
+}
+.3-column .column:last-child {
+	margin-right: 0;
+}
+
+
+
+/* END 3-COLUMN STYLES */
+
 @media (max-width: 1180px) {
 
 	/* BEGIN HEADER STYLES */
@@ -209,6 +245,17 @@ p {
 
 	/* END HERO STYLES */
 
+	/* BEGIN 3-COLUMN STYLES */
+
+	.column {
+		display: block;
+		width: 90%;
+		margin: 0 5%;
+	}
+	.column img{
+		width: 50%;
+	}
+	/* END 3-COLUMN STYLES */
 
 }
 
@@ -219,12 +266,13 @@ p {
 
 	.image-left, .text-right {
 		display: block;
-		width: 100%;
-		margin-right: 0;
+		width: 90%;
+		margin: 18px 5%;
+		text-align: center;
 	}
 
 
-	/* BEGIN IMAGE-TEXT STYLES */
+	/* END IMAGE-TEXT STYLES */
 
 	/* BEGIN HERO STYLES */
 
