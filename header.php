@@ -68,7 +68,7 @@
         <div class="fw-container">
             <div class="header">
                 <div class="logo-container">
-                    <!-- <img src="" /> -->
+                    <!-- <img src="<?php echo get_template_directory_uri (); ?>/images/logo-sample.png" /> -->
                 </div>
                 <!-- Nav for Desktop -->
                 <div class="nav-container" id="desktop">

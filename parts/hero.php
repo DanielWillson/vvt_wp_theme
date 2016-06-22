@@ -1,7 +1,7 @@
 <div id="event-video-teaser" class="fw-container hero clear">
 	<div class="videoWrapper">
 	        <iframe id="ytplayer" type="text/html"
-	src="https://www.youtube.com/embed/YQbGg1hRnUg?autoplay=1&controls=0&enablejsapi=1&modestbranding=1&rel=0&showinfo=0&loop=1&playlist=YQbGg1hRnUg"
+	src="//www.youtube-nocookie.com/embed/vMsdGuk1xoA?VQ=HD720&rel=0&controls=0&showinfo=0&loop=0&controls=0&autoplay=1"
 	frameborder="0" allowfullscreen></iframe>
 	</div>
 		<script>
@@ -24,10 +24,11 @@
 	        });
 	    </script>
 		<div class="hero-text">
-			<h3>
+			<h3 class="opening">
 				We’re on a mission to find, celebrate, and support Virginia’s top startups. 
 			</h3>
-			<br>
-			<p>This September, the Virginia Velocity Tour will travel the Commonwealth to recruit, support, and celebrate the entrepreneurs building Virginia’s 21st century economy. It’s a jam-packed week of tours, talks, and pitch competitions with over $100,000 in prizes.</p>
+			<p class="description">This September, the Virginia Velocity Tour will travel the Commonwealth to recruit, support, and celebrate the entrepreneurs building Virginia’s 21st century economy. It’s a jam-packed week of tours, talks, and pitch competitions with over $100,000 in prizes.</p>
+			<a href="#"><span class="button apply">Apply</span></a>
+			<a href="#"><span class="button rsvp">RSVP</span></a>
 		</div>
 	</div>
