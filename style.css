@@ -369,6 +369,12 @@ p {
 }
 
 
+
+
+.crazy {
+	background-color: #333;
+}
+
 /* END QUOTE STYLES */
 
 @media (max-width: 1180px) {
@@ -401,23 +407,20 @@ p {
 	}
 
 	/* END HERO STYLES */
-	/* BEGIN QUOTE-RIGHT STYLES */
+
+	/* BEGIN QUOTE STYLES */
 
 	.quote-right-text {
-		padding: 75px 0;
-		width: 60%;
+		padding: 27px;
+		width: 35%;
 	}
-
-	/* END QUOTE-RIGHT STYLES */
-
-	/* BEGIN QUOTE-LEFT STYLES */
 
 	.quote-left-text {
-		padding: 75px 0;
-		width: 60%;
+		padding: 27px;
+		width: 35%;
 	}
 
-	/* END QUOTE-RLEFT STYLES */
+	/* END QUOTE STYLES */
 
 }
 
@@ -439,8 +442,6 @@ p {
 
 
 	/* END IMAGE-TEXT STYLES */
-<<<<<<< HEAD
-=======
 
 	/* BEGIN VIDEO-TEXT STYLES */
 
@@ -461,7 +462,6 @@ p {
 
 	/* END VIDEO-TEXT STYLES */
 
->>>>>>> origin/master
 	/* BEGIN HERO STYLES */
 
 	.hero-text {
@@ -485,23 +485,21 @@ p {
 	}
 	/* END 3-COLUMN STYLES */
 
-	/* BEGIN QUOTE-RIGHT STYLES */
+	/* BEGIN QUOTE STYLES */
 
 	.quote-right-text {
-		padding: 50px 0;
-		width: 70%;
+		padding: 21px;
+		width: 30%;
+		font-size: 15px;
 	}
-
-	/* END QUOTE-RIGHT STYLES */
-
-	/* BEGIN QUOTE-LEFT STYLES */
 
 	.quote-left-text {
-		padding: 50px 0;
-		width: 70%;
+		padding: 21px;
+		width: 30%;
+		font-size: 15px;
 	}
 
-	/* END QUOTE-LEFT STYLES */
+	/* END QUOTE STYLES */
 
 
 }
@@ -513,8 +511,38 @@ p {
 		display: none;
 	}
 
-
 	/* END HERO STYLES */
+
+	/* BEGIN QUOTE STYLES */
+
+	.quote-right {
+		height: 300px;
+	}
+	.quote-left {
+		height: 300px;
+	}
+
+	.quote-right-text {
+		
+		padding: 18px;
+		width: 90%;
+		font-size: 13px;
+		
+		margin: 0;
+		position: absolute;
+		bottom: 18px;
+	}
+	.quote-left-text {
+		padding: 18px;
+		width: 90%;
+		font-size: 13px;
+		
+		margin: 0;
+		position: absolute;
+		bottom: 18px;
+	}
+	/* END QUOTE STYLES */
+
 }
 
 
@@ -548,23 +576,28 @@ p {
 
 	/* END VIDEO-TEXT STYLES */
 
-	/* BEGIN QUOTE-RIGHT STYLES */
+	/* BEGIN QUOTE STYLES */
+	
 
-	.quote-right-text {
-		padding: 18px 0;
-		width: 100%;
+	.quote-right {
+		height: 200px;
 	}
-
-	/* END QUOTE-RIGHT STYLES */
-
-	/* BEGIN QUOTE-LEFT STYLES */
+	.quote-left {
+		height: 200px;
+	}
+	.quote-right-text {
+		padding: 10px;
+		font-size: 10px;
+		margin-top: 26%;
+	}
 
 	.quote-left-text {
-		padding: 18px 0;
-		width: 100%;
+		padding: 10px;
+		font-size: 10px;
+		margin-top: 26%;
 	}
 
-	/* END QUOTE-LEFT STYLES */
+	/* END QUOTE STYLES */
 
 }
 

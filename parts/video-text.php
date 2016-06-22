@@ -1,3 +1,4 @@
+<div class="crazy">
 <div class="fw-container">
 	<div class="video-text">
 		<div class="video-left-container">
@@ -11,4 +12,5 @@
 
 		</div>
 	</div>
+</div>
 </div>
