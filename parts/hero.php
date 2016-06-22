@@ -5,8 +5,6 @@
 	frameborder="0" allowfullscreen></iframe>
 	</div>
 		<script>
-
-			/* Default */
 	        $(function() {
 	            console.log((16 / 9) * $("#fw-container").width());
 	            $('.videoWrapper').css('height', (9 / 16) * 1356);
