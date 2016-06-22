@@ -170,10 +170,13 @@ p {
 }
 
 .hero-text {
-	width: 40%;
-	float: right;
-	padding: 100px 0;
-	padding-right: 5%;
+	width: 30%;
+    position: absolute;
+    top: 15%;
+    right: 96px;
+    padding: 36px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
 }
 
 .hero-text h3 {
@@ -262,7 +265,6 @@ p {
 
 
 /* END QUOTE-RIGHT STYLES */
-
 /* BEGIN QUOTE-LEFT STYLES */
 
 .quote-left {
