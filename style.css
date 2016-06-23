@@ -325,15 +325,23 @@ header {
 	font-size: 0;
 }
 
-.column h3{
+.column h3 {
 	font-weight:bold;
 }
 
-.column img{
+.column img {
 	width: 100%;
 	height: auto;
 	border: 2px solid white;
 	margin-bottom: 18px;
+}
+
+.column:first-child img {
+	border-left: none;
+}
+
+.column:last-child img {
+	border-right: none;
 }
 
 .column {
