@@ -7,17 +7,12 @@
 		<script>
 	        $(function() {
 	            console.log((16 / 9) * $("#fw-container").width());
-	            $('.videoWrapper').css('height', (9 / 16) * 1356);
+	            $('.videoWrapper').css('height', (9 / 16) * $(window).width());
 	        });
 
 	        $(function() {
 	            $(window).resize(function() {
-	                if ($(window).width() < 1356) {
-	                	$('.videoWrapper').css('height', (9 / 16) * $(window).width());
-	                }
-	                else {
-	                	$('.videoWrapper').css('height', (9 / 16) * 1356);
-	                }
+                	$('.videoWrapper').css('height', (9 / 16) * $(window).width());
 	            });
 	        });
 	    </script>
