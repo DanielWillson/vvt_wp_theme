@@ -195,7 +195,7 @@ header {
 
 .video-left-container {
 	width: 48%;
-	padding: 36px 0;
+	padding: 90px 0;
 	padding-right: 4%;
 	display: inline-block;
 	vertical-align: middle;
@@ -347,15 +347,15 @@ header {
 .column {
 	font-size: 18px;
 	width: 33.3%;
-	padding-bottom: 36px;
+	padding: 90px 0;
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
-	/*margin-right: 5%;*/
 }
 
 .column-text {
 	padding: 0 18px;
+	text-align: left;
 }
 
 /*
@@ -492,8 +492,7 @@ header {
 
 	.video-left-container {
 		width: 100%;
-		padding-right: 0;
-		padding-bottom: 0;
+		padding: 36px 0 0 0;
 	}
 
 	.text-right {
@@ -518,13 +517,15 @@ header {
 	/* BEGIN 3-COLUMN STYLES */
 
 	.three-column .column:first-child {
-		margin-top: 36px;
+		margin-top: 60px;
 	}
 
 	.column {
 		display: block;
 		width: 100%;
-		margin: 0;
+		margin: 0 auto;
+		padding-top: 0;
+		padding-bottom: 36px;
 	}
 
 	.column img {
@@ -622,6 +623,10 @@ header {
 		width: 92%;
 	}
 
+	.hero-text {
+		border: none;
+	}
+
 	/* END HERO STYLES */
 	/* BEGIN IMAGE-TEXT STYLES */
 
@@ -630,7 +635,6 @@ header {
 	}
 
 	/* END IMAGE-TEXT STYLES */
-
 	/* BEGIN VIDEO-TEXT STYLES */
 
 	.video-left-container {
@@ -638,7 +642,6 @@ header {
 	}
 
 	/* END VIDEO-TEXT STYLES */
-
 	/* BEGIN QUOTE STYLES */
 	
 
