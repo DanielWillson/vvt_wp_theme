@@ -181,8 +181,8 @@ header {
 	/*background: #7d9ec6;*/
 	background: #0c4d84;
 	border-top: 2px solid #000;
-	border-bottom: 2px solid #000;
-}
+/*	border-bottom: 2px solid #000;
+*/}
 
 .video-text {
 	font-size: 0;
@@ -190,9 +190,9 @@ header {
 }
 
 .video-left-container {
-	width: 49%;
+	width: 48%;
 	padding: 36px 0;
-	padding-right: 2%;
+	padding-right: 4%;
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -201,7 +201,9 @@ header {
 	position: relative;
 	padding-bottom: 52.25%; /* 16:9 */
 	padding-top: 25px;
-	height: 0;	
+	height: 0;
+	box-shadow: 0 0 10px rgba(30,30,30,.4);
+
 }
 
 .video-left iframe {
@@ -213,11 +215,11 @@ header {
 }
 
 .text-right {
-	width: 49%;
+	width: 48%;
 	display: inline-block;
 	font-size: 18px;
 	vertical-align: middle;
-	margin: 36px 0;
+	padding: 36px 0;
 }
 
 .text-right .heading {
@@ -244,6 +246,7 @@ header {
     padding-bottom: 45px;
     background: rgba(0, 0, 0, 0.8);
     color: white;
+    border: 1px solid white;
 }
 
 .hero-text h3 {
@@ -270,6 +273,10 @@ header {
 	border: 2px solid white;
 	text-transform: uppercase;
 	margin-right: 18px;
+}
+
+.hero-text a .button {
+	color: #028fc5;
 }
 
 .hero-text .button:hover {
@@ -319,27 +326,31 @@ header {
 }
 
 .column img{
-	width: 80%;
+	width: 100%;
 	height: auto;
+	border: 2px solid white;
+	margin-bottom: 18px;
 }
 
 .column {
 	font-size: 18px;
-	width: 30%;
-	padding: 36px 0;
+	width: 33.3%;
+	padding-bottom: 36px;
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
-	margin-right: 5%;
+	/*margin-right: 5%;*/
 }
 
+.column-text {
+	padding: 0 18px;
+}
+
+/*
 .three-column .column:nth-child(3) {
 	margin-right: 0;
-}
+}*/
 
-.column img {
-	margin-bottom: 9px;
-}
 
 /* END 3-COLUMN STYLES */
 /* BEGIN QUOTE STYLES */
@@ -460,26 +471,27 @@ header {
 
 
 	/* END IMAGE-TEXT STYLES */
-
 	/* BEGIN VIDEO-TEXT STYLES */
 
 	.video-left {
 		display: block;
-		width: 90%;
-		margin-right: auto;
-		margin-left: auto;
+		width: 100%;
 	} 
+
 	.video-left-container {
-		width: 90%;
+		width: 100%;
+		padding-right: 0;
+		padding-bottom: 0;
 	}
+
 	.text-right {
 		display: block;
 		width: 100%;
+		padding: 18px 0;
 	}
 
 
 	/* END VIDEO-TEXT STYLES */
-
 	/* BEGIN HERO STYLES */
 
 	.hero-text {
