@@ -32,11 +32,11 @@
         <?php if ( ( function_exists( 'get_post_format' ) && 'gallery' == get_post_format( $post->ID ) ) || in_category( _x( 'gallery', 'gallery category slug', 'starkers' ) ) ) : ?>
          
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <header>
+                <div>
                     <h2><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'starkers' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
      
                     <?php starkers_posted_on(); ?>
-                </header>
+                </div>
      
     <?php if ( post_password_required() ) : ?>
                     <?php the_content(); ?>
@@ -57,7 +57,7 @@
      
     <?php endif; ?>
      
-                <footer>
+                
     	            <?php if ( function_exists( 'get_post_format' ) && 'gallery' == get_post_format( $post->ID ) ) : ?>
     	            <a href="<?php echo get_post_format_link( 'gallery' ); ?>" title="<?php esc_attr_e( 'View Galleries', 'starkers' ); ?>"><?php _e( 'More Galleries', 'starkers' ); ?></a> | 
     	            
@@ -66,9 +66,8 @@
     	            
     	            <?php endif; ?>
     	            
-    	            <?php comments_popup_link( __( 'Leave a comment', 'starkers' ), __( '1 Comment', 'starkers' ), __( '% Comments', 'starkers' ) ); ?>
     	            <?php edit_post_link( __( 'Edit', 'starkers' ), '| ', '' ); ?>
-                </footer>
+                
             </article>
      
     <?php /* How to display posts of the Aside format. The asides category is the old way. */ ?>
@@ -83,9 +82,6 @@
                     <?php the_content( __( 'Continue reading &rarr;', 'starkers' ) ); ?>
             <?php endif; ?>
              
-                <footer>
-                    <?php starkers_posted_on(); ?> | <?php comments_popup_link( __( 'Leave a comment', 'starkers' ), __( '1 Comment', 'starkers' ), __( '% Comments', 'starkers' ) ); ?> <?php edit_post_link( __( 'Edit', 'starkers' ), '| ', '' ); ?>
-                </footer>
             </article>
      
     <?php /* How to display all other posts. */ ?>
@@ -94,11 +90,11 @@
          
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
              
-    			<header>
+    			<div>
                     <h2><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'starkers' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
      
                     <?php starkers_posted_on(); ?>
-                </header>
+                </div>
      
         <?php if ( is_archive() || is_search() ) : // Only display excerpts for archives and search. ?>
                     <?php the_excerpt(); ?>
@@ -108,7 +104,7 @@
                     <?php wp_link_pages( array( 'before' => '<nav>' . __( 'Pages:', 'starkers' ), 'after' => '</nav>' ) ); ?>
         <?php endif; ?>
          
-                <footer>
+                
      
                     <?php if ( count( get_the_category() ) ) : ?>
                             <?php printf( __( 'Posted in %2$s', 'starkers' ), 'entry-utility-prep entry-utility-prep-cat-links', get_the_category_list( ', ' ) ); ?> |
@@ -119,14 +115,11 @@
                     ?>
                             <?php printf( __( 'Tagged %2$s', 'starkers' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list ); ?> |
                     <?php endif; ?>
-                    <?php comments_popup_link( __( 'Leave a comment', 'starkers' ), __( '1 Comment', 'starkers' ), __( '% Comments', 'starkers' ) ); ?>
                     <?php edit_post_link( __( 'Edit', 'starkers' ), '| ', '' ); ?>
                      
-                </footer>
+                
     		</article>
-     
-                <?php comments_template( '', true ); ?>
-     
+          
         <?php endif; // This was the if statement that broke the loop into three parts based on categories. ?>
      
     <?php endwhile; // End the loop. Whew. ?>
