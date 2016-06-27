@@ -9,7 +9,6 @@
 	            console.log((16 / 9) * $("#fw-container").width());
 	            $('.videoWrapper').css('height', (9 / 16) * $(window).width());
 	        });
-
 	        $(function() {
 	            $(window).resize(function() {
                 	$('.videoWrapper').css('height', (9 / 16) * $(window).width());

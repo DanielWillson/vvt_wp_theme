@@ -6,7 +6,7 @@
 	    	">
 	<div class="fw-container quote-left clear">
 	    <div class="quote-left">
-			<div class="quote-left-text">
+			<div class="quote-text left">
 				<h4 class="quote">
 					"Entrepreneurism and innovation are key to growth in every part of urban, rural and suburban Virginia. Startup firms are particularly important for building the new Virginia economy."
 				</h4>
