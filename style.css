@@ -10,8 +10,6 @@ Author URI: http://danielwillson.com
 @import "css/reset.css";
 @import "css/layout.css";
 @import "css/matt.css";
-/*@import "css/fonts.css";
-*/
 /* Importing the fonts */
 
 @font-face {
@@ -107,6 +105,7 @@ input,
 textarea { 
 	font-size: 18px; 
 	font-family: 'Gotham', Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 300;
 }
 
 h1 { line-height: 64px; font-size: 2.667em; } /* 48px */
@@ -115,11 +114,11 @@ h3 { line-height: 38px; font-size: 1.444em; } /* 28px */
 h4 { line-height: 24px; font-size: 1.222em; } /* 22px */
 
 h1, h2 {
-	font-family: GothamBlack;
+	font-weight: 800;
 }
 
 h3, h4 {
-	font-family: GothamMedium;
+	font-weight: 500;
 }
 
 a {
@@ -843,6 +842,7 @@ article h4 {
 		padding: 6% 4%;
 		left: 0;
 		width: 92%;
+		top: 1%;
 	}
 
 	.hero-text {
@@ -872,7 +872,8 @@ article h4 {
 	}
 	.quote-text {
 		padding: 10px;
-		margin-top: 26%;
+		margin-top: 0;
+		bottom: 0;
 	}
 
 	/* END QUOTE STYLES */
