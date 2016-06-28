@@ -356,8 +356,8 @@ header {
 .hero-text {
 	width: 30%;
     position: absolute;
-    top: 12.5%;
-    right: 96px;
+    top: 5%;
+    right: 72px;
     padding: 36px;
     padding-bottom: 45px;
     background: rgba(0, 0, 0, 0.8);
@@ -380,7 +380,6 @@ header {
 }
 
 .hero-text .description {
-	padding-bottom: 18px;
 	line-height: 24px;
 }
 
@@ -389,7 +388,9 @@ header {
 	border: 2px solid white;
 	text-transform: uppercase;
 	margin-right: 18px;
+	margin-top: 9px;
 	font-weight: 500;
+	display: inline-block;
 }
 
 .hero-text a .button {
@@ -469,6 +470,10 @@ header {
 	text-align: left;
 }
 
+.column-text p {
+	margin-bottom: 0;
+}
+
 .column-text h4 {
 	padding-bottom: 18px;
 }
@@ -523,7 +528,7 @@ footer {
 }
 
 .footer-top {
-	padding: 60px 0;
+	padding: 60px 0 42px 0;
 	text-align: center;
 }
 
@@ -843,7 +848,7 @@ article h4 {
 		padding: 6% 4%;
 		left: 0;
 		width: 92%;
-		top: 1%;
+		top: 0;
 	}
 
 	.hero-text {

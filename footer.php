@@ -33,6 +33,11 @@
 							<img src="<?php echo get_template_directory_uri (); ?>/images/vilcap.png" />
 						</a>
 					</li>
+					<li class="sponsor">
+						<a href="#" target="_blank">
+							<img src="<?php echo get_template_directory_uri (); ?>/images/vilcap.png" />
+						</a>
+					</li>
 	    	</div>
 		</div>
 		<div class="footer-bottom">
