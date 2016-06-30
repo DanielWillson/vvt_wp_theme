@@ -218,8 +218,10 @@ header {
 }
 
 #menu-dropdown {
-	position: fixed;
-	right: 18px;
+	position: absolute;
+	right: 0px;
+	text-align: right;
+	width: 250px;
 	background: #028fc5;
 	margin-top: 10px;
 	font-size: 1.222em;
