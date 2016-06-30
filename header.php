@@ -102,7 +102,7 @@
                 </div>
                 <div class="new-logo-container">
                     <div class="logo-holder">
-                        <img src="<?php echo get_template_directory_uri (); ?>/images/logotest6.png" />
+                        <img src="<?php echo get_template_directory_uri (); ?>/images/logo.png" />
                     </div>
                 </div>
                 <div class="new-nav-container right" id="desktop">
