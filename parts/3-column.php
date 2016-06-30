@@ -14,7 +14,7 @@
 				<div class="column-text">
 					<h2>Investors</h2>
 					<h4>Connect with early-stage founders from across the Commonwealth</h4>
-					<p>Email contact@virginiavelocity.org if you’d like to be involved.</p>
+					<p>Email <a href="#" target="_blank">contact@virginiavelocity.org</a> if you’d like to be involved.</p>
 				</div>
 			</div>
 			<div class="column">

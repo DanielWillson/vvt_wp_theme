@@ -96,7 +96,28 @@
     </script>
     <header>
         <div class="fw-container">
-            <div class="header">
+            <div class="header clear">
+                <div class="new-nav-container left" id="desktop">
+                    <?php wp_nav_menu( array( 'container' => 'nav', 'fallback_cb' => 'starkers_menu', 'theme_location' => 'left_primary' ) ); ?>
+                </div>
+                <div class="new-logo-container">
+                    <div class="logo-holder">
+                        <img src="<?php echo get_template_directory_uri (); ?>/images/logotest6.png" />
+                    </div>
+                </div>
+                <div class="new-nav-container right" id="desktop">
+                    <?php wp_nav_menu( array( 'container' => 'nav', 'fallback_cb' => 'starkers_menu', 'theme_location' => 'right_primary' ) ); ?>
+                </div>
+                <div id="show-button">
+                    <div class="nav-container show-button">
+                        <img src="<?php echo get_template_directory_uri (); ?>/images/navicon-white.png" alt="Menu" class="navicon">
+                        <div id="menu-dropdown">
+                            <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header old">
                 <div class="logo-container">
                     <!-- <img src="<?php echo get_template_directory_uri (); ?>/images/logo-sample.png" /> -->
                 </div>

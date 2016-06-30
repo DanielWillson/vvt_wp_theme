@@ -2,8 +2,8 @@
 	<div class="videoWrapper">
 		<video autoplay loop>
 		  <source src="<?php echo get_template_directory_uri (); ?>/images/video.mp4" type="video/mp4">
-		  <!-- <source src="movie.ogg" type="video/ogg"> -->
-		  Your browser does not support the video tag.
+		  <source src="<?php echo get_template_directory_uri (); ?>/images/video.webm" type="video/webm">
+		  <source src="<?php echo get_template_directory_uri (); ?>/images/video.ogv" type="video/ogg">
 		</video>
 	</div>
 		<script>

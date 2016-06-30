@@ -39,6 +39,8 @@ function starkers_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Navigation', 'starkers' ),
+		'left_primary' => __( 'Left Primary', 'starkers' ),
+		'right_primary' => __( 'Right Primary', 'starkers' ),
 	) );
 }
 endif;
