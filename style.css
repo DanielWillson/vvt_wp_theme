@@ -985,7 +985,9 @@ article h4 {
 
 	/* END QUOTE STYLES */
 	/* BEGIN FOOTER STYLES */
-
+	footer h2{
+		margin-bottom: 18px;
+	}
 	footer .sponsor {
 		width: 100%;
 		margin: 0;

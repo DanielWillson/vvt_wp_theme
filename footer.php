@@ -14,8 +14,8 @@
 				<h2>Virginia Velocity Tour Sponsors</h2>
 				<ul class="sponsors">
 					<li class="sponsor">
-						<a href="http://www.thegilliamfoundation.org/" target="_blank">
-							<img src="<?php echo get_template_directory_uri (); ?>/images/gilliam.png" />
+						<a href="http://hitachifoundation.org" target="_blank">
+							<img src="<?php echo get_template_directory_uri (); ?>/images/hitachi.png" />
 						</a>
 					</li>
 					<li class="sponsor">
@@ -24,10 +24,11 @@
 						</a>
 					</li>
 					<li class="sponsor">
-						<a href="http://hitachifoundation.org" target="_blank">
-							<img src="<?php echo get_template_directory_uri (); ?>/images/hitachi.png" />
+						<a href="http://www.thegilliamfoundation.org/" target="_blank">
+							<img src="<?php echo get_template_directory_uri (); ?>/images/gilliam.png" />
 						</a>
 					</li>
+					
 	    	</div>
 		</div>
 		<div class="footer-bottom">
