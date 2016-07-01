@@ -917,7 +917,12 @@ article h4 {
 	}
 
 	/* END FOOTER STYLES */
+	/* BEGIN ARTICLE STYLES */
 
+	.article-title h1, .article-title h2 {		line-height: 45px;
+	}
+
+	/* END ARTICLE STYLES */
 
 }
 
@@ -996,14 +1001,13 @@ article h4 {
 
 	.article-title h1, .article-title h2 {
 		text-align: left;
-		line-height: 45px;
 	}
 
 	.article-title article {
 		padding-bottom: 24px;
 	}
 
-	article {
+	.article-content article {
 		padding-top: 24px;
 	}
 
