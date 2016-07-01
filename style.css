@@ -606,11 +606,9 @@ footer h2 {
 }
 
 footer .sponsor {
-	padding-left: 3%;
-	padding-right: 3%;
 	display: inline-block;
-	width: 22%;
-	margin: 0 1.25%;
+	width: 21%;
+	margin: 0 2%;
 	margin-bottom: 18px;
 	font-size: 0;
 	vertical-align: middle;
