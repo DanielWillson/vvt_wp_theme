@@ -1,9 +1,9 @@
 <div id="event-video-teaser" class="fw-container hero clear">
 	<div class="videoWrapper">
 		<video autoplay loop poster="<?php echo get_template_directory_uri (); ?>/images/poster.jpg">
-		  <source src="<?php echo get_template_directory_uri (); ?>/images/video.mp4" type="video/mp4">
-		  <source src="<?php echo get_template_directory_uri (); ?>/images/video.webm" type="video/webm">
-		  <source src="<?php echo get_template_directory_uri (); ?>/images/video.ogv" type="video/ogg">
+		  <source src="<?php echo get_template_directory_uri (); ?>/images/video2.mp4" type="video/mp4">
+		  <source src="<?php echo get_template_directory_uri (); ?>/images/video2.webm" type="video/webm">
+		  <source src="<?php echo get_template_directory_uri (); ?>/images/video2.ogv" type="video/ogg">
 		</video>
 	</div>
 		<script>
