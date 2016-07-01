@@ -14,6 +14,11 @@
 				<h2>Virginia Velocity Tour Sponsors</h2>
 				<ul class="sponsors">
 					<li class="sponsor">
+						<a href="http://www.thegilliamfoundation.org/" target="_blank">
+							<img src="<?php echo get_template_directory_uri (); ?>/images/gilliam.png" />
+						</a>
+					</li>
+					<li class="sponsor">
 						<a href="https://www.dom.com/corporate/our-commitments/community/charitable-giving-and-the-dominion-foundation" target="_blank">
 							<img src="<?php echo get_template_directory_uri (); ?>/images/dominion.png" />
 						</a>

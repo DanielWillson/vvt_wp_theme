@@ -611,6 +611,7 @@ footer .sponsor {
 	margin: 0 1.25%;
 	margin-bottom: 18px;
 	font-size: 0;
+	vertical-align: middle;
 }
 
 footer .sponsor img {
