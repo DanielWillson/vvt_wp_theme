@@ -23,7 +23,7 @@
 					We’re on a mission to find, celebrate, and support Virginia’s top startups. 
 				</h3>
 				<p class="description">This September, the Virginia Velocity Tour will travel the Commonwealth to recruit, support, and celebrate the entrepreneurs building Virginia’s 21st century economy. It’s a jam-packed week of tours, talks, and pitch competitions with over $100,000 in prizes.</p>
-				<a href="#"><span class="button apply">Apply</span></a>
+				<a href="<?php echo get_home_url(); ?>/apply"><span class="button apply">Apply</span></a>
 				<a href="#"><span class="button rsvp">Sign up for updates</span></a>
 			</div>
 		</div>

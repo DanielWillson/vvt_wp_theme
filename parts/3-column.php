@@ -6,7 +6,7 @@
 				<div class="column-text">
 					<h2>Startups</h2>
 					<h4>Apply to be a competing startup in the Virginia Velocity Tour</h4>
-					<p>Startups gain acces to our investor network, press, and more. Get details and apply <a href="">here</a>.</p>
+					<p>Startups gain acces to our investor network, press, and more. Get details and apply <a href="<?php echo get_home_url(); ?>/apply">here</a>.</p>
 			</div>
 			</div>
 			<div class="column">
