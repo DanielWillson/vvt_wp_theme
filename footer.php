@@ -32,7 +32,7 @@
 		</div>
 		<div class="footer-bottom">
 			<div class="fw-container">
-				<p>© Virginia Velocity 2016. <a href="#">Privacy Policy</a> 
+				<p>© Virginia Velocity 2016. <a href="http://www.danielwillson.me/vvt/privacy/">Privacy Policy</a> 
 	    	</div>
 		</div>
 	</footer>

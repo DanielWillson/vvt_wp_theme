@@ -606,6 +606,8 @@ footer h2 {
 }
 
 footer .sponsor {
+	padding-left: 3%;
+	padding-right: 3%;
 	display: inline-block;
 	width: 22%;
 	margin: 0 1.25%;
