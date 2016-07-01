@@ -3,7 +3,7 @@
 		<div class="video-text">
 			<div class="video-left-container">
 			<div class="video-left">
-	            <iframe src="https://www.youtube.com/embed/Dup_YMhHchg" frameborder="0" allowfullscreen></iframe>
+	            <iframe src="https://youtu.be/tFepoSOB-Qg" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 			<div class="text-right">
