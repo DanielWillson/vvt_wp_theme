@@ -36,41 +36,6 @@
     <script src="<?php bloginfo('template_directory'); ?>/js/modernizr-1.6.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" />
 
-    <!-- BEGIN Open Graph Tags -->
-    <?php 
-        $post_id = get_the_ID();
-        $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'single-post-thumbnail' );
-        $thumbnail_img = $thumbnail[0];
-        $thumbnail_img_width = $thumbnail[1];
-        $thumbnail_img_height = $thumbnail[2];
-​
-        $excerpt = apply_filters('the_excerpt', get_post_field('post_excerpt', $post_id));
-        $notAllowed = array("<p>", "<p> ", "</p>", " </p>", "<br>");
-        $excerpt = str_replace($notAllowed, "", $excerpt);
-        $type = "article";
-        $title = get_the_title();
-        $permalink = get_the_permalink();
-​
-​
-        if (!is_single()) {
-            $excerpt = types_render_field( "excerpt", array( "output"=>"raw") );
-        }
-​
-        if (is_page()) {
-            $thumbnail_img = get_bloginfo( 'template_url' ); 
-            $thumbnail_img .= '/images/standard-thumbnail.jpg';
-            $thumbnail_img_width = 1829;
-            $thumbnail_img_height = 1097;   
-        }
-​
-        if (!is_front_page()) {
-            $title .= " | Virginia Velocity Tour";
-            $description = "The Pioneer is both an online publication and the media education program at HackCville.";
-        }
-​
-    ?>
-    <!-- END Open Graph Tags -->
-
     <!-- GA -->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
