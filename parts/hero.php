@@ -20,11 +20,11 @@
 	    <div class="fw-container">
 			<div class="hero-text">
 				<h3 class="opening">
-					We’re on a mission to find, celebrate, and support Virginia’s top startups. 
+					We’re on a mission to recruit, celebrate, and support Virginia’s top startups. 
 				</h3>
-				<p class="description">This September, the Virginia Velocity Tour will travel the Commonwealth to recruit, support, and celebrate the entrepreneurs building Virginia’s 21st century economy. It’s a jam-packed week of tours, talks, and pitch competitions with over $100,000 in prizes.</p>
-				<a href="<?php echo get_home_url(); ?>/apply"><span class="button apply">Apply</span></a>
-				<a href="#"><span class="button rsvp">Sign up for updates</span></a>
+				<p class="description">This September, the Virginia Velocity Tour will travel the Commonwealth to shine a spotlight on the entrepreneurs building Virginia’s 21st century economy. It’s a jam-packed week of tours, talks, and pitch competitions with over $100,000 in prizes.</p>
+				<a href="<?php echo get_home_url(); ?>/apply"><span class="button apply">Info for Startups</span></a>
+				<a href="http://virginiavelocity.us11.list-manage.com/subscribe?u=9b6739a967b12786ac03a8aef&id=1f058fef1b" target="_blank"><span class="button rsvp">Sign up for updates</span></a>
 			</div>
 		</div>
 	</div>

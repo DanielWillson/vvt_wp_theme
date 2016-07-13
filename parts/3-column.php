@@ -5,8 +5,8 @@
 				<img src="<?php echo get_template_directory_uri (); ?>/images/startup.jpg">
 				<div class="column-text">
 					<h2>Startups</h2>
-					<h4>Apply to be a competing startup in the Virginia Velocity Tour</h4>
-					<p>Startups gain acces to our investor network, press, and more. Get details and apply <a href="<?php echo get_home_url(); ?>/apply">here</a>.</p>
+					<h4>Selected startups gain access toApply to be a competing startup in the Virginia Velocity Tour</h4>
+					<p>Selected startups gain access to our network, media exposure, and more. Get details and apply <a href="<?php echo get_home_url(); ?>/apply">here</a>.</p>
 			</div>
 			</div>
 			<div class="column">
@@ -14,7 +14,7 @@
 				<div class="column-text">
 					<h2>Investors</h2>
 					<h4>Connect with early-stage founders from across the Commonwealth</h4>
-					<p>Email <a href="mailto:contact@virginiavelocity.org" target="_blank">contact@virginiavelocity.org</a> if you’d like to be involved.</p>
+					<p>Email <a href="mailto:investors@virginiavelocitytour.org" target="_blank">investors@virginiavelocity.org</a> if you’d like to be involved.</p>
 				</div>
 			</div>
 			<div class="column">

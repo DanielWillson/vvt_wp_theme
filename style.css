@@ -135,6 +135,14 @@ p {
 	margin-bottom: 1em;
 }
 
+article strong {
+	font-weight: bold;
+}
+
+article em {
+	font-style: italic;
+}
+
 .clear:after {
   content: "";
   display: table;
