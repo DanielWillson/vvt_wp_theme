@@ -5,7 +5,7 @@
 				<img src="<?php echo get_template_directory_uri (); ?>/images/startup.jpg">
 				<div class="column-text">
 					<h2>Startups</h2>
-					<h4>Selected startups gain access toApply to be a competing startup in the Virginia Velocity Tour</h4>
+					<h4>Apply to be a competing startup in the Virginia Velocity Tour</h4>
 					<p>Selected startups gain access to our network, media exposure, and more. Get details and apply <a href="<?php echo get_home_url(); ?>/apply">here</a>.</p>
 			</div>
 			</div>

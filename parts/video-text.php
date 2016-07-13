@@ -3,7 +3,8 @@
 		<div class="video-text">
 			<div class="video-left-container">
 			<div class="video-left">
-	            <iframe src="https://www.youtube.com/embed/tFepoSOB-Qg" frameborder="0" allowfullscreen></iframe>
+				<img src="<?php echo get_template_directory_uri (); ?>/images/pitch.jpg" />
+	            <!-- <iframe src="#" frameborder="0" allowfullscreen></iframe> -->
 			</div>
 		</div>
 			<div class="text-right">
