@@ -3,7 +3,7 @@
 		<div class="video-text">
 			<div class="video-left-container">
 			<div class="video-left">
-				<img src="<?php echo get_template_directory_uri (); ?>/images/pitch.jpg" />
+				<img src="<?php echo get_template_directory_uri (); ?>/images/pitch.jpg" style="width: 100%; height: auto;" />
 	            <!-- <iframe src="#" frameborder="0" allowfullscreen></iframe> -->
 			</div>
 		</div>
