@@ -49,6 +49,16 @@
 </script>-->
     <!-- END GA -->
 
+    <meta property="og:title" content="Virginia Velocity Tour | Celebrating Virginia's Entrepreneurs" />
+    <meta property="og:url" content="http://www.virginiavelocitytour.org" />
+    <meta property="og:description" content="We’re on a mission to recruit, celebrate, and support Virginia’s top startups."/>
+    <meta property="og:image" content="http://virginiavelocitytour.org/wp-content/uploads/2016/07/pitch-1.jpg" />
+    <meta property="og:image:width" content = "1362" />
+    <meta property="og:image:height" content = "775" />
+    <meta property="fb:app_id" content="1073102732783457" />
+    <meta property="fb:admins" content="1432338858" />
+
+
     <?php
         /* We add some JavaScript to pages with the comment form
          * to support sites with threaded comments (when in use).
