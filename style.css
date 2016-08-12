@@ -613,7 +613,7 @@ footer h2 {
 	text-transform: uppercase;
 }
 
-footer .sponsor {
+.sponsor {
 	display: inline-block;
 	width: 21%;
 	margin: 0 2%;
@@ -622,7 +622,7 @@ footer .sponsor {
 	vertical-align: middle;
 }
 
-footer .sponsor img {
+.sponsor img {
 	width: 100%;
 	height: auto;
 }
@@ -715,8 +715,140 @@ article h4 {
 	padding-top: .25em;
 }
 
-
 /* END ARTICLE STYLES */
+
+
+
+/* BEGIN CITY STYLE */
+
+h2 {
+	text-align: center;
+	padding: 18px;
+}
+
+
+
+/* BEGIN CITY-HERO */
+
+.hero-filter {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    display: inline-block;
+}
+.city-name {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: -50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.city-name h1{
+	font-size: 400%;
+	padding-bottom: 4px;
+}
+.city-name h4{
+	font-style: italic;
+    font-weight: 300;
+}
+
+
+/* END CITY-HERO */
+
+
+
+/* BEGIN CITY-TEXT */
+.city-text{
+	padding-bottom: 18px;
+}
+/* END CITY-TEXT */
+
+
+
+/* BEGIN DAY-SPONSORS -- Must have this not be universal */
+.day-sponsor {
+	text-align: center;
+	padding: 5%;
+}
+/* END DAY-SPONSORS */
+
+
+/* BEGIN SUBSCRIBE-BOX */
+
+.full-width-subscribe {
+  background: #151515;
+  font-size: 0;
+  -moz-box-shadow:    inset  0  15px 15px -15px rgba(0,0,0,0.8), 
+                    inset  0 -15px 15px -15px rgba(0,0,0,0.8);
+  -webkit-box-shadow: inset  0  15px 15px -15px rgba(0,0,0,0.8), 
+                    inset  0 -15px 15px -15px rgba(0,0,0,0.8);
+  box-shadow:        inset  0  15px 15px -15px rgba(0,0,0,0.8), 
+                    inset  0 -15px 15px -15px rgba(0,0,0,0.8);
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.fw-subscribe-left,
+.fw-subscribe-right {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.fw-subscribe-left,
+.fw-subscribe-right {
+  width: 50%;
+}
+
+.fw-subscribe-left h3 {
+  color: #fff;
+  font-weight: bold;
+}
+
+.fw-subscribe-left h4 {
+  color: #fff;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.fw-subscribe-content-left {
+  padding: 36px;
+  padding-right: 18px;
+  text-align: right;
+}
+
+.fw-subscribe-content-right {
+  padding: 36px;
+  padding-left: 18px;
+ }
+
+.pioneer-checkbox {
+  display: none;
+}
+
+.full-width-subscribe input.email,
+.full-width-subscribe input.button {
+  font-size: 1.333em;
+  font-family: 'Gotham', Calibri, Arial, sans-serif;
+  margin-right: 9px;
+  padding: 9px;
+}
+
+
+.full-width-subscribe .input-group {
+  margin-top: 9px;
+}
+/* END SUBSCRIBE-BOX */
+
+/* BEGIN DAY-SPONSORS */
+
+/* END DAY-SPONSORS */
+
+/* END CITY STYLE */
 
 
 @media (max-width: 1180px) {
@@ -758,7 +890,36 @@ article h4 {
 	}
 
 	/* END QUOTE STYLES */
+	/* BEGIN FULL WIDTH SUBSCRIBE */
+	  
+	  .fw-subscribe-left,
+	  .fw-subscribe-right {
+	    display: block;
+	    width: 100%;
+	  }
 
+	  .fw-subscribe-content-left {
+	    padding: 36px;
+	    padding-bottom: 18px;
+	    text-align: center;
+	  }
+
+	  .fw-subscribe-content-right {
+	    padding: 36px;
+	    padding-top: 18px;
+	    text-align: center;
+	  }
+
+	  .full-width-subscribe input.email,
+	  .full-width-subscribe input.button {
+	    margin-bottom: 9px;
+	  }
+
+	  .full-width-subscribe .input-group {
+	    margin-top: 0;
+	  }
+
+	  /* END FULL WIDTH SUBSCRIBE */
 }
 
 
@@ -860,7 +1021,7 @@ article h4 {
 	/* END QUOTE STYLES */
 	/* BEGIN FOOTER STYLES */
 
-	footer .sponsor {
+	.sponsor {
 		width: 30%;
 	}
 
@@ -916,7 +1077,7 @@ article h4 {
 	/* END IMAGE-TEXT STYLES */
 	/* BEGIN FOOTER STYLES */
 
-	footer .sponsor {
+	.sponsor {
 		width: 40%;
 		margin: 0 4%;
 		margin-bottom: 18px;
@@ -929,7 +1090,34 @@ article h4 {
 	}
 
 	/* END ARTICLE STYLES */
+	/* BEGIN FULL WIDTH SUBSCRIBE */
 
+	  .fw-subscribe-content-left {
+	    padding: 18px;
+	    padding-bottom: 9px;
+	  }
+
+	  .fw-subscribe-content-right {
+	    padding: 18px;
+	    padding-top: 9px;
+	  }
+
+	  /* END FULL WIDTH SUBSCRIBE */
+	  /* BEGIN CITY-HERO */
+	  .hero-image{
+	  	height: 250px;
+	  }
+	  .hero-filter{
+	  	height: 250px;
+	  }
+	  .city-name h1{
+	  	font-size: 300%;
+	  }
+	.city-name{
+		top: -40%;
+	}
+
+	  /* END CITY-HERO */
 }
 
 
@@ -999,7 +1187,7 @@ article h4 {
 	footer h2{
 		margin-bottom: 18px;
 	}
-	footer .sponsor {
+	.sponsor {
 		width: 100%;
 		margin: 0;
 		margin-bottom: 18px;
@@ -1018,7 +1206,27 @@ article h4 {
 	}
 
 	/* END FOOTER STYLES */
+	/* BEGIN FULL WIDTH SUBSCRIBE */
 
+	  .full-width-subscribe input.email {
+	    width: 250px;
+	  }
+
+	  /* END FULL WIDTH SUBSCRIBE */
+	  /* BEGIN CITY-HERO */
+	  .hero-image{
+	  	height: 200px;
+	  }
+	  .hero-filter{
+	  	height: 200px;
+	  }
+	  .city-name h1{
+	  	font-size: 250%;
+	  }
+	  .city-name h4{
+	  	font-size: 110%;
+	  }
+	  /* END CITY-HERO */
 }
 
 @media (max-width: 400px) {
