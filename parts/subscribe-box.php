@@ -9,7 +9,7 @@
 		<div class="fw-subscribe-content-right">
 			<!-- Begin MailChimp Signup Form -->
 			<div id="mc_embed_signup">
-			<form action="//hackcville.us5.list-manage.com/subscribe/post?u=dae9a7242f836507908a2f2d6&amp;id=97161904f1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<form action="http://virginiavelocity.us11.list-manage.com/subscribe?u=9b6739a967b12786ac03a8aef&id=1f058fef1b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 			    <div id="mc_embed_signup_scroll">
 			<div class="mc-field-group">
 				<input type="email" placeholder="you@youremail.com" name="EMAIL" class="required email" id="mce-EMAIL" class="email">

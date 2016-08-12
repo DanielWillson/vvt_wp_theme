@@ -1,4 +1,4 @@
-<div class="city-words"style="background: url('<?php echo get_template_directory_uri (); ?>/images/crossword.png');">
+<div class="city-words">
 	<div class="fw-container">
 		<div class="city-text">
 			<h2 class="heading">The Richmond Day</h2>

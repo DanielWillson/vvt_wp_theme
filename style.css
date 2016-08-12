@@ -763,6 +763,12 @@ h2 {
 /* BEGIN CITY-TEXT */
 .city-text{
 	padding-bottom: 18px;
+	color: white;
+	max-width: 960px;
+	margin: 0 auto;
+}
+.city-words{
+	background-color: #151515;
 }
 /* END CITY-TEXT */
 
@@ -844,9 +850,9 @@ h2 {
 }
 /* END SUBSCRIBE-BOX */
 
-/* BEGIN DAY-SPONSORS */
+/* BEGIN SUPPORTING-SPONSORS */
 
-/* END DAY-SPONSORS */
+/* END SUPPORTING-SPONSORS */
 
 /* END CITY STYLE */
 
@@ -1215,17 +1221,20 @@ h2 {
 	  /* END FULL WIDTH SUBSCRIBE */
 	  /* BEGIN CITY-HERO */
 	  .hero-image{
-	  	height: 200px;
+	  	height: 150px;
 	  }
 	  .hero-filter{
-	  	height: 200px;
+	  	height: 150px;
 	  }
 	  .city-name h1{
-	  	font-size: 250%;
+	  	font-size: 200%;
 	  }
 	  .city-name h4{
-	  	font-size: 110%;
+	  	font-size: 100%;
 	  }
+	.city-name{
+		top: -30%;
+	}
 	  /* END CITY-HERO */
 }
 
