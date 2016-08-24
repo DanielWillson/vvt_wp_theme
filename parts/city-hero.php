@@ -11,5 +11,8 @@
 			<h4><?php echo types_render_field( "tour-date", array( ) ) ?></h4>
 		</div>
 	</div>
+	<?php 
+	$page_id = get_the_ID();
+	?>
 </div>
 
