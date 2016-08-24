@@ -328,6 +328,14 @@ header {
 	padding: 36px 0;
 }
 
+.image-text.inverted {
+	padding: 0;
+}
+
+.image-text .date {
+	font-weight: bold;
+}
+
 .image-text a {
 	color: #028fc5
 }
@@ -337,6 +345,10 @@ header {
 	display: inline-block;
 	margin-right: 4%;
 	vertical-align: middle;
+}
+
+.image-left.inverted {
+	margin-right: 0;
 }
 
 .image-left img {
@@ -350,6 +362,19 @@ header {
 	font-size: 18px;
 	vertical-align: middle;
 	margin: 18px 0;
+}
+
+.text-right.inverted {
+	margin-right: 4%;
+}
+
+.image-text .schedule-list {
+	list-style-type: disc;
+	padding-left: 1.5em;
+}
+
+.image-text li {
+	padding-bottom: 10px;
 }
 
 /* END IMAGE-TEXT STYLES */
@@ -504,7 +529,6 @@ header {
 .three-column-container {
 	border-bottom: 2px solid #000;
 	padding: 96px 0;
-	background: #151515;
 }
 
 .three-column {
@@ -537,7 +561,6 @@ header {
 .column-text {
 	padding: 0 18px;
 	text-align: left;
-	color: white;
 }
 
 .column-text p {
@@ -720,7 +743,7 @@ article h4 {
 
 /* BEGIN CITY STYLE */
 
-h2 {
+.city-page h2 {
 	text-align: center;
 	padding: 18px;
 }
@@ -986,7 +1009,6 @@ h2 {
 
 	.three-column-container {
 		padding: 60px 0;
-		background: #151515;
 	}
 
 	.column {
