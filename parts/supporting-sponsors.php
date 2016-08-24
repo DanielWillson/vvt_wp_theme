@@ -40,7 +40,10 @@
 				else {}
 			?>
 
-		<?php endwhile; ?>	
+		<?php endwhile; 
+		wp_reset_query();
+
+		?>	
 		</ul>
 	</div>
 </div>
