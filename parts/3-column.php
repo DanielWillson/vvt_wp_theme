@@ -1,4 +1,4 @@
-<div class="three-column-container" style="background: url('<?php echo get_template_directory_uri (); ?>/images/crossword.png');">
+<div class="three-column-container">
 	<div class="fw-container">
 		<div class="three-column">
 			<div class="column">

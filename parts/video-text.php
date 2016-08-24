@@ -1,4 +1,4 @@
-<div class="video-text-container">
+<div class="video-text-container" style="background: url('<?php echo get_template_directory_uri (); ?>/images/crossword.png');">
 	<div class="fw-container">
 		<div class="video-text">
 			<div class="video-left-container">

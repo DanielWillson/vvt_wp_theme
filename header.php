@@ -104,7 +104,7 @@
         });
     });
     </script>
-    <header>
+    <header style="background: url('<?php echo get_template_directory_uri (); ?>/images/crossword.png');">
         <div class="fw-container">
             <div class="header clear">
                 <div class="new-nav-container left" id="desktop">
@@ -112,7 +112,7 @@
                 </div>
                 <div class="new-logo-container">
                     <div class="logo-holder">
-                        <a href="<?php echo get_home_url() ; ?>"><img src="<?php echo get_template_directory_uri (); ?>/images/logo.png" /></a>
+                        <a href="<?php echo get_home_url() ; ?>"><img src="<?php echo get_template_directory_uri (); ?>/images/new-web-logo.png" /></a>
                     </div>
                 </div>
                 <div class="new-nav-container right" id="desktop">
@@ -120,7 +120,7 @@
                 </div>
                 <div id="show-button">
                     <div class="nav-container show-button">
-                        <img src="<?php echo get_template_directory_uri (); ?>/images/navicon-white.png" alt="Menu" class="navicon">
+                        <img src="<?php echo get_template_directory_uri (); ?>/images/navicon.gif" alt="Menu" class="navicon">
                         <div id="menu-dropdown">
                             <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
                         </div>
