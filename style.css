@@ -756,6 +756,7 @@ article h4 {
     box-shadow: inset 0 15px 15px -15px rgba(0,0,0,0.8), inset 0 -15px 15px -15px rgba(0,0,0,0.8);
     color: black;
     text-align: center;
+    background: #0f86ad;
 }
 
 .city-nav .city-nav-content {
@@ -777,13 +778,13 @@ article h4 {
 }
 
 .city-nav .city-nav-content li a {
-	color: black;
+	color: white;
 }
 
 .city-nav .city-nav-content li.current a,
 .city-nav .city-nav-content li a:hover {
 	text-decoration: underline;
-	color: #028fc5;
+	color: black;
 }
 
 .city-nav .city-nav-content li:last-child {
@@ -929,6 +930,10 @@ article h4 {
 /* END SUPPORTING-SPONSORS */
 
 /* BEGIN EVENT SCHEDULE */
+
+.city-schedule {
+	padding-bottom: 48px;
+}
 
 .city-schedule ul {
 	max-width: 960px;

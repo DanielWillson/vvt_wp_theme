@@ -1,8 +1,6 @@
 <div class="city-schedule" style="background: url('<?php echo get_template_directory_uri (); ?>/images/crossword.png');">
 	<div class="fw-container">
-		<h2>Tour Schedule</h2>
-		<div class="subheading">Only events with an RSVP link are open to the public. All other events are invite-only.</div>
-		<ul class="schedule">
+		
 		<?php 
 
 		$city = get_the_title();
@@ -14,6 +12,19 @@
 		else if (strcmp($city, "Charlottesville") == 0) { $city_number = 5; }
 		else {}
 
+			?>
+
+		<h2>Tour Schedule: <?php echo $city;
+			if ($city_number == 1) { echo " 9/19"; }
+			else if ($city_number == 2) { echo " 9/20"; }
+			else if ($city_number == 3) { echo " 9/21"; }
+			else if ($city_number == 4) { echo " 9/22"; }
+			else if ($city_number == 5) { echo " 9/23"; } ?>
+		</h2>
+		<div class="subheading">Only events with an RSVP link are open to the public. All other events are invite-only.</div>
+		<ul class="schedule">
+		<?php
+
 		$args = array (
 			'post_type' => 'event'
 		);
@@ -21,6 +32,8 @@
 		while ( $loop->have_posts() ) : $loop->the_post();
 
 		?>
+
+
 			<?php 
 				$event_city_number = types_render_field( 'day', array() );
 				$time = types_render_field( 'event-time', array());

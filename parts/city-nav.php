@@ -13,7 +13,7 @@ $current = "current";
 
 ?>
 
-<div class="city-nav" style="background: url('<?php echo get_template_directory_uri (); ?>/images/crossword.png');">
+<div class="city-nav">
 		<div class="city-nav-content">
 			<ul>
 				<li class="<?php if($city_number == 1) { echo $current; } ?>" >
