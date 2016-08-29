@@ -1,4 +1,4 @@
-<div class="day-sponsor"style="background: url('<?php echo get_template_directory_uri (); ?>/images/crossword.png');">
+<div class="day-sponsor" style="background: url('<?php echo get_template_directory_uri (); ?>/images/crossword.png');">
 	<div class="fw-container">
 		<h2>Day Sponsors and Partners</h2>
 		<ul class="sponsors">
@@ -12,6 +12,7 @@
 		else if (strcmp($city, "Northern Virginia") == 0) { $city_number = 4; }
 		else if (strcmp($city, "Charlottesville") == 0) { $city_number = 5; }
 		else {}
+
 
 		$args = array (
 			'post_type' => 'sponsor',
@@ -39,6 +40,7 @@
 			?>
 
 		<?php endwhile; 
+		
 		wp_reset_query();
 		?>	
 		</ul>
