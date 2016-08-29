@@ -21,7 +21,7 @@
 			else if ($city_number == 4) { echo " 9/22"; }
 			else if ($city_number == 5) { echo " 9/23"; } ?>
 		</h2>
-		<div class="subheading">Only events with an RSVP link are open to the public. All other events are invite-only.</div>
+		<div class="subheading">Only events with an RSVP link are open to the public. All other events are invite-only.<br>More events will be announced soon.</div>
 		<ul class="schedule">
 		<?php
 
