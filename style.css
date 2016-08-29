@@ -930,6 +930,77 @@ article h4 {
 
 /* END CITY STYLE */
 
+/* BEGIN SCHEDULE */
+
+.schedule-page {
+	background: #111;
+	padding: 27px 0;
+}
+
+.schedule-page ul {
+	font-size: 0;
+}
+
+.schedule-page li {
+	display: inline-block;
+	width: 32%;
+    margin-right: 2%;
+    margin-top: 2%;
+	height: 400px;
+	vertical-align: top;
+	box-shadow: 0 0 10px rgba(30,30,30,.4);
+}
+
+.schedule-page ul a:nth-child(3n) li {
+	margin-right: 0;
+}
+
+.schedule-page .item-content {
+	font-size: 18px;
+	padding: 18px;
+	position: relative;
+    top: -50%;
+    transform: translateY(-50%);
+}
+
+.schedule-page a h1,
+.schedule-page a h3,
+.schedule-page a h4 {
+	color: white;
+}
+
+.schedule-page a:hover h4 {
+	color: #028fc5;
+	text-decoration: underline;
+}
+
+.schedule-page h3 {
+	text-transform: uppercase;
+}
+
+.schedule-page h1 {
+	line-height: 100%;
+}
+
+.schedule-page h4 {
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+.schedule-page .filter {
+	width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    transition: .3s;
+}
+
+.schedule-page li:hover .filter {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+/* END SCHEDULE */
+
+
 
 @media (max-width: 1180px) {
 
@@ -1005,6 +1076,22 @@ article h4 {
 	  	padding: 36px 0;
 	  }
 	  /* END IMAGE-TEXT */
+	  /* BEGIN SCHEDULE */
+		
+		.schedule-page h3 {
+			font-size: 1.25em;
+		}
+
+		.schedule-page h1 {
+			font-size: 2em;
+		}
+
+		.schedule-page h4 {
+			font-size: 1em;
+		}
+
+	  /* END SCHEDULE */
+
 }
 
 
@@ -1120,6 +1207,20 @@ article h4 {
 	}
 
 	/* END CITY PAGE STYLES */
+	/* BEGIN SCHEDULE */
+
+	.schedule-page li,
+	.schedule-page ul a:nth-child(3n) li {
+		width: 48%;
+	    margin-right: 3%;
+	    height: 400px;
+	}
+
+	.schedule-page ul a:nth-child(2n) li {
+		margin-right: 0;
+	}
+
+	  /* END SCHEDULE */
 
 }
 
@@ -1211,6 +1312,18 @@ article h4 {
 	}
 
 	  /* END CITY-HERO */
+}
+
+@media (max-width: 660px) {
+
+	.schedule-page ul a:nth-child(2n) li,
+	.schedule-page ul a:nth-child(3n) li,
+	.schedule-page li {
+		width: 100%;
+		height: 300px;
+		margin-right: 0;
+	}
+
 }
 
 
