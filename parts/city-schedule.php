@@ -1,4 +1,4 @@
-<div class="city-schedule" style="background: url('<?php echo get_template_directory_uri (); ?>/images/crossword.png');">
+<div class="city-schedule">
 	<div class="fw-container">
 		
 		<?php 
@@ -11,7 +11,6 @@
 		else if (strcmp($city, "Northern Virginia") == 0) { $city_number = 4; }
 		else if (strcmp($city, "Charlottesville") == 0) { $city_number = 5; }
 		else {}
-
 			?>
 
 		<h2>Tour Schedule: <?php echo $city;
@@ -35,14 +34,14 @@
 
 
 			<?php 
-				$event_city_number = types_render_field( 'day', array() );
+				$event_city_number = types_render_field( 'day', array('output' => 'raw') );
+
 				$time = types_render_field( 'event-time', array());
 				$hosted = types_render_field ('hosted-by', array('output'=>'raw'));
 				$hosted_url = types_render_field ('hosted-link', array('output'=>'raw'));
 				$description = types_render_field ('event-description', array());
 				$rsvp = types_render_field ('rsvp-link', array('output'=>'raw'));
 				$image = types_render_field ('stop-logo', array('output'=>'raw'));
-
 
 				if ($event_city_number == $city_number) {
 					?>

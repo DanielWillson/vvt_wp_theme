@@ -1,4 +1,4 @@
-<div class="day-sponsor"style="background: url('<?php echo get_template_directory_uri (); ?>/images/crossword.png');">
+<div class="day-sponsor">
 	<div class="fw-container">
 		<h2>Supporting Sponsors and Partners</h2>
 		<ul class="sponsors">
@@ -15,6 +15,7 @@
 
 		$args = array (
 			'post_type' => 'sponsor',
+			'posts_per_page' => 60
 		);
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post();

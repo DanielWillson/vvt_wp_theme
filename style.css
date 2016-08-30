@@ -853,6 +853,7 @@ article h4 {
 .day-sponsor {
 	text-align: center;
 	padding: 5%;
+	padding-top: 0;
 }
 /* END DAY-SPONSORS */
 
@@ -919,7 +920,6 @@ article h4 {
   padding: 9px;
 }
 
-
 .full-width-subscribe .input-group {
   margin-top: 9px;
 }
@@ -932,7 +932,7 @@ article h4 {
 /* BEGIN EVENT SCHEDULE */
 
 .city-schedule {
-	padding-bottom: 48px;
+	padding-bottom: 24px;
 }
 
 .city-schedule ul {
@@ -953,7 +953,6 @@ article h4 {
 
 .city-schedule .event .image {
 	width: 20%;
-	padding-top: 18px;
 	margin-right: 5%;
 	height: auto;
 	display: inline-block;

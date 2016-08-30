@@ -1,4 +1,4 @@
-<div class="day-sponsor" style="background: url('<?php echo get_template_directory_uri (); ?>/images/crossword.png');">
+<div class="day-sponsor">
 	<div class="fw-container">
 		<h2>Day Sponsors and Partners</h2>
 		<ul class="sponsors">
@@ -16,28 +16,36 @@
 
 		$args = array (
 			'post_type' => 'sponsor',
+			'posts_per_page' => 60
 		);
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post();
 
-		?>
-			<?php 
-				$sponsor_city_number = types_render_field( 'days', array() );
-				$level = types_render_field( 'sponsorship-level', array() );
-				if ($sponsor_city_number == $city_number) {
-					if (strcmp($level, "Day") == 0) {
-						?>
-						<li class="sponsor">
-							<a href="<?php echo types_render_field( 'sponsor-website', array('output' => 'raw')); ?>" target="_blank">
-								<img src="<?php echo types_render_field( 'logo', array('url' => 'true')); ?>" />
-							</a>
-						</li>
-						<?php
-					}
-					else {}
+			$sponsor_city_number = types_render_field( 'days', array() );
+			$stringCheck = (string)$city_number;
+			$level = types_render_field( 'sponsorship-level', array() );
+
+			// echo types_render_field( 'sponsor-website', array('output' => 'raw')); 
+			// echo " " . $stringCheck . $sponsor_city_number . " Test: ";
+			// $result = strpos($sponsor_city_number, $stringCheck);
+			// echo $result;
+			// echo "<br>";
+
+			// if ($sponsor_city_number == $city_number) {
+			if (strpos($sponsor_city_number, $stringCheck) !== false) {
+				if (strcmp($level, "Day") == 0) {
+					?>
+					<li class="sponsor">
+						<a href="<?php echo types_render_field( 'sponsor-website', array('output' => 'raw')); ?>" target="_blank">
+							<img src="<?php echo types_render_field( 'logo', array('url' => 'true')); ?>" />
+						</a>
+					</li>
+					<?php
 				}
 				else {}
-			?>
+			}
+			else {}
+		?>
 
 		<?php endwhile; 
 		

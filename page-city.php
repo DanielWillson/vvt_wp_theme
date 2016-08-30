@@ -7,8 +7,8 @@
 	<?php get_template_part( 'parts/city-hero', 'page-city' ); ?>
 	<?php get_template_part( 'parts/city-nav', 'page-city' ); ?>
 	<?php get_template_part( 'parts/city-text', 'page-city' ); ?>
-	<?php get_template_part( 'parts/day-sponsors', 'page-city' ); ?>
 	<?php get_template_part( 'parts/city-schedule', 'page-city' ); ?>
+	<?php get_template_part( 'parts/day-sponsors', 'page-city' ); ?>
 	<?php get_template_part( 'parts/subscribe-box', 'page-city' ); ?>
 	<?php get_template_part( 'parts/supporting-sponsors', 'page-city' ); ?>
 </div>

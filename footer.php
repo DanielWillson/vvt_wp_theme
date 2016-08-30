@@ -11,11 +11,12 @@
 	<footer>
 	    <div class="footer-top" style="background: url('<?php echo get_template_directory_uri (); ?>/images/crossword.png');">
 	    	<div class="fw-container">
-				<h2>Virginia Velocity Tour Sponsors</h2>
+				<h2>Virginia Velocity Tour Presenting Sponsors</h2>
 				<ul class="sponsors">
 					<?php 
 					$args = array (
 						'post_type' => 'sponsor',
+						'posts_per_page' => 60
 					);
 					$loop = new WP_Query( $args );
 					while ( $loop->have_posts() ) : $loop->the_post();
@@ -40,23 +41,6 @@
 					wp_reset_query();
 					?>	
 				</ul>
-				<!-- <ul class="sponsors">
-					<li class="sponsor">
-						<a href="http://hitachifoundation.org" target="_blank">
-							<img src="<?php echo get_template_directory_uri (); ?>/images/hitachi.png" />
-						</a>
-					</li>
-					<li class="sponsor">
-						<a href="https://www.dom.com/corporate/our-commitments/community/charitable-giving-and-the-dominion-foundation" target="_blank">
-							<img src="<?php echo get_template_directory_uri (); ?>/images/dominion.png" />
-						</a>
-					</li>
-					<li class="sponsor">
-						<a href="http://www.thegilliamfoundation.org/" target="_blank">
-							<img src="<?php echo get_template_directory_uri (); ?>/images/gilliam.png" />
-						</a>
-					</li>
-					 -->
 	    	</div>
 		</div>
 		<div class="footer-bottom">
