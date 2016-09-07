@@ -50,7 +50,7 @@
 				<li style="background: url('<?php echo get_template_directory_uri ();?>/images/cville.jpg') top center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
 					<div class="filter"></div>
 					<div class="item-content">
-						<h3>Mon Sep 23:</h3>
+						<h3>Fri Sep 23:</h3>
 						<h1>Charlottesville</h1>
 						<h4>View Full Schedule &rarr;</h4>
 					</div>

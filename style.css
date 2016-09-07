@@ -201,6 +201,11 @@ header {
 	color: #38466d;
 }
 
+.new-nav-container .menu-right-menu-container li a {
+	border: 2px solid #0f86ad;
+    padding: 5px 10px;
+}
+
 .new-nav-container.left li {
 	margin-left: 0;
 	float: left;
@@ -983,6 +988,10 @@ article h4 {
 .city-schedule .event .details .rsvp {
 	font-weight: 700;
 	text-transform: uppercase;
+}
+
+.city-schedule .event .details .title {
+	line-height: 1.2em;
 }
 
 

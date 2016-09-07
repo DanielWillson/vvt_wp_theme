@@ -25,7 +25,8 @@
 		<?php
 
 		$args = array (
-			'post_type' => 'event'
+			'post_type' => 'event',
+			'posts_per_page' => 70
 		);
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post();
@@ -38,7 +39,7 @@
 
 				$time = types_render_field( 'event-time', array());
 				$hosted = types_render_field ('hosted-by', array('output'=>'raw'));
-				$hosted_url = types_render_field ('hosted-link', array('output'=>'raw'));
+				$hosted_url = types_render_field ('host-website', array('output'=>'raw'));
 				$description = types_render_field ('event-description', array());
 				$rsvp = types_render_field ('rsvp-link', array('output'=>'raw'));
 				$image = types_render_field ('stop-logo', array('output'=>'raw'));
@@ -53,7 +54,7 @@
 							<h3 class="title"><?php echo get_the_title(); ?></h2>
 							<h4 class="time"><?php echo $time; ?></h4>
 							<?php if (strcmp($hosted, "") != 0) { ?>
-							<h4 class="hosted">hosted by <a href="<?php echo $host_website; ?>" target="_blank"><?php echo $hosted; ?></a></h4>
+							<h4 class="hosted">hosted by <a href="<?php echo $hosted_url; ?>" target="_blank"><?php echo $hosted; ?></a></h4>
 							<?php } ?>
 							<p class="description"><?php echo $description; ?></p>
 							<?php 

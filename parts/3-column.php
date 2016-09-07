@@ -21,8 +21,8 @@
 				<img src="<?php echo get_template_directory_uri (); ?>/images/image1.jpg">
 				<div class="column-text">
 					<h2>Community</h2>
-					<h4>Schedule and details about the tour will be available soon.</h4>
-					<p><a href="">Sign up for updates.</a></p>
+					<h4>Schedule and details about the tour are now available.</h4>
+					<p><a href="http://virginiavelocitytour.org/schedule">View the full schedule.</a></p>
 				</div>
 			</div>
 		</div>
