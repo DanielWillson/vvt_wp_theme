@@ -979,10 +979,15 @@ article h4 {
 .city-schedule .event .details .hosted {
 	font-weight: 300;
 	font-style: italic;
+	font-size: 20px;
 }
 
 .city-schedule .event .details .description {
 	margin-top: 10px;
+}
+
+.city-schedule .event .details p {
+	font-size: 16px;
 }
 
 .city-schedule .event .details .rsvp {
