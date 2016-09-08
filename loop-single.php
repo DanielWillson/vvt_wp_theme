@@ -10,44 +10,64 @@
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-		<nav>
-			<?php previous_post_link( '%link', '' . _x( '&larr;', 'Previous post link', 'starkers' ) . ' %title' ); ?>
-			<?php next_post_link( '%link', '%title ' . _x( '&rarr;', 'Next post link', 'starkers' ) . '' ); ?>
-		</nav>
-		
+<div class="blog-post">
+	<div class="fw-container">
+		<div class="blog-title">
+			
+			<?php if ( is_front_page() ) { ?>
+			<h2><?php the_title(); ?></h2>
+			<?php } else { ?>	
+			<h1><?php the_title(); ?></h1>
+			<?php } ?>
+			<h4>by <?php the_author(); ?> of <a href="http://thepioneer.co" target="_blank">The Pioneer</a></h4>
+			<h5>published <?php the_date(); ?></h5>
+			
+		</div>
+		<?php $page_id = get_the_ID(); ?>
+	</div>	
+	<div class="fw-container">
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			
-			<header>
-				<h1><?php the_title(); ?></h1>
-
-				<?php starkers_posted_on(); ?>
-			</header>
-
-			<?php the_content(); ?>
-					
-			<?php wp_link_pages( array( 'before' => '<nav>' . __( 'Pages:', 'starkers' ), 'after' => '</nav>' ) ); ?>
+			<img src="<?php echo types_render_field( 'article-background', array( 'url' => 'true' ) ) ?>" class="lead-image" />
 		
-			<?php if ( get_the_author_meta( 'description' ) ) : // If a user has filled out their description, show a bio on their entries  ?>
-				<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'starkers_author_bio_avatar_size', 60 ) ); ?>
-				<h2><?php printf( esc_attr__( 'About %s', 'starkers' ), get_the_author() ); ?></h2>
-				<?php the_author_meta( 'description' ); ?>
-					<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
-						<?php printf( __( 'View all posts by %s &rarr;', 'starkers' ), get_the_author() ); ?>
-					</a>
-			<?php endif; ?>
 			
-			<footer>
-				<?php starkers_posted_in(); ?>
-				<?php edit_post_link( __( 'Edit', 'starkers' ), '', '' ); ?>
-			</footer>
+			<?php the_content(); ?>	
 				
 		</article>
+		<div class="sidebar">
+			<div class="headline">The Tour Schedule</div>
+			<div class="schedule-item">
+				<a href="http://virginiavelocitytour.org/roanoke-and-blacksburg"><img src="<?php echo get_template_directory_uri ();?>/images/roanoke.jpg" class="city" /></a>
+				<p><span class="name">Roanoke & Blacksburg</span><br>
+				<span class="date">Mon Sep 19</span><br>
+				<span class="view"><a href="http://virginiavelocitytour.org/roanoke-and-blacksburg">View the schedule &rarr;</a></p>
+			</div>
+			<div class="schedule-item">
+				<a href="http://virginiavelocitytour.org/richmond"><img src="<?php echo get_template_directory_uri ();?>/images/richmond.jpg" class="city" /></a>
+				<p><span class="name">Richmond</span><br>
+				<span class="date">Tues Sep 20</span><br>
+				<span class="view"><a href="http://virginiavelocitytour.org/richmond">View the schedule &rarr;</a></p>
+			</div>
+			<div class="schedule-item">
+				<a href="http://virginiavelocitytour.org/hampton-roads"><img src="<?php echo get_template_directory_uri ();?>/images/virginia-beach.jpg" class="city" /></a>
+				<p><span class="name">Hampton Roads</span><br>
+				<span class="date">Wed Sep 21</span><br>
+				<span class="view"><a href="http://virginiavelocitytour.org/hampton-roads">View the schedule &rarr;</a></p>
+			</div>
+			<div class="schedule-item">
+				<a href="http://virginiavelocitytour.org/northern-virginia"><img src="<?php echo get_template_directory_uri ();?>/images/nova.jpg" class="city" /></a>
+				<p><span class="name">Northern Virginia</span><br>
+				<span class="date">Thurs Sep 22</span><br>
+				<span class="view"><a href="http://virginiavelocitytour.org/roanoke-and-blacksburg">View the schedule &rarr;</a></p>
+			</div>
+			<div class="schedule-item">
+				<a href="http://virginiavelocitytour.org/charlottesville"><img src="<?php echo get_template_directory_uri ();?>/images/cville.jpg" class="city" /></a>
+				<p><span class="name">Charlottesville</span><br>
+				<span class="date">Fri Sep 23</span><br>
+				<span class="view"><a href="http://virginiavelocitytour.org/charlottesville">View the schedule &rarr;</a></p>
+			</div>
 
-		<nav>
-			<?php previous_post_link( '%link', '' . _x( '&larr;', 'Previous post link', 'starkers' ) . ' %title' ); ?>
-			<?php next_post_link( '%link', '%title ' . _x( '&rarr;', 'Next post link', 'starkers' ) . '' ); ?>
-		</nav>
-
-		<?php comments_template( '', true ); ?>
+		</div>
+	</div>
+</div>
 
 <?php endwhile; // end of the loop. ?>
